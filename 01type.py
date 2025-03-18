@@ -40,6 +40,17 @@ tc = 37.7
 tf = tc * 9 / 5 +32
 print(f'{tc=}, ===> {tf=}')
 
-#사칙연산중에서 0으로 나누는 것은 허용하지 않음
-print(3/0)
-#
+# #사칙연산중에서 0으로 나누는 것은 허용하지 않음
+# print(3/0)
+a ="True"
+
+print(type(a))
+
+a = '3'
+b = float(a)
+print(b**int(a))
+
+a = '3.5'
+b = 4
+print(a * b)
+
