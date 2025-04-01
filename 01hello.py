@@ -41,3 +41,6 @@ print(f'{tf=} ===> {tf=}')
 
 print(2 ** 3, 2 ** (1/2), 2 ** (-1/2))
 a = 1
+
+import sys
+print(sys.version)
