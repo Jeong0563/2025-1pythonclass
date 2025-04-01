@@ -32,3 +32,20 @@
 ## project 1 : 파이값 구하기
 파이값을 구하고 그래프 그리기 <hr>
 ![img.png](img.png)
+
+#### 결과값
+```
+pilist = []
+
+p = 1
+for i in range(1,200):
+    p *= ((2*i+1)**2-1) / ((2* i + 1) **2)
+    pilist.append(p*4)
+    print(p * 4, ',')
+
+import matplotlib.pyplot as plt
+plt.plot(pilist)
+plt.show()
+```
+##### 그래프
+![img_1.png](img_1.png)
