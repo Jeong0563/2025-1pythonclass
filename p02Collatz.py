@@ -4,10 +4,13 @@
 #n이 짝수 -> n/2
 #n이 홀수 -> 3* n + 1
 n = 1
+n1 = 0
 j = 0
 num = 0
-for n in range(1, 99):
+num1 = 0
+for n in range(1, 1000):
     n += 1
+    n1 = n
     j = 0
     print(n)
     while n > 1:
@@ -21,6 +24,8 @@ for n in range(1, 99):
         if num < j:
             num = 0
             num += j
-        print('반복횟수', j)
+            num1 = n1
 
+        print('반복횟수', j)
+print('높은 숫자',num1)
 print('가장 높은 숫자', num)
