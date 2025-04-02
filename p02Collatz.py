@@ -8,7 +8,7 @@ n1 = 0
 j = 0
 num = 0
 num1 = 0
-for n in range(1, 1000):
+for n in range(1, 10):
     n += 1
     n1 = n
     j = 0
