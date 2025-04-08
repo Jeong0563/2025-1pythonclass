@@ -10,8 +10,7 @@ max_num = 0
 max_num2 = 0
 max_num3 = 0
 ncount = 0
-ncount2 = 0
-for n in range(1, 50):
+for n in range(1, 100):
     ncopy = n
     count = 0
     while n > 1:
@@ -24,9 +23,11 @@ for n in range(1, 50):
     if max_num < count:
         max_num2 = max_num
         max_num = count
+        ncount2 = ncount
         ncount = ncopy
     elif max_num2 < count < max_num:
         max_num2 = count
 print('숫자',ncount)
+print('두번째 숫자', ncount2)
 print('가장 높은 숫자', max_num)
 print('두번째로 큰수', max_num2)
