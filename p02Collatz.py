@@ -4,28 +4,29 @@
 #n이 짝수 -> n/2
 #n이 홀수 -> 3* n + 1
 n = 1
-n1 = 0
-j = 0
-num = 0
-num1 = 0
-for n in range(1, 10):
-    n += 1
-    n1 = n
-    j = 0
-    print(n)
+ncopy = 0
+count = 0
+max_num = 0
+max_num2 = 0
+max_num3 = 0
+ncount = 0
+ncount2 = 0
+for n in range(1, 50):
+    ncopy = n
+    count = 0
     while n > 1:
-        j+=1
+        count+=1
         if n % 2 == 0:
             n = n / 2
-            print('짝수', 'n / 2 = ',n)
         elif n % 2 != 0:
             n = 3 * n + 1
-            print('홀수', '3*n+1 = ', n)
-        if num < j:
-            num = 0
-            num += j
-            num1 = n1
-
-        print('반복횟수', j)
-print('높은 숫자',num1)
-print('가장 높은 숫자', num)
+    print(count)
+    if max_num < count:
+        max_num2 = max_num
+        max_num = count
+        ncount = ncopy
+    elif max_num2 < count < max_num:
+        max_num2 = count
+print('숫자',ncount)
+print('가장 높은 숫자', max_num)
+print('두번째로 큰수', max_num2)
