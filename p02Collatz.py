@@ -28,6 +28,6 @@ for n in range(1, 100):
     elif max_num2 < count < max_num:
         max_num2 = count
 print('숫자',ncount)
-print('두번째 숫자', ncount2)
 print('가장 높은 숫자', max_num)
+print('두번째 숫자', ncount2)
 print('두번째로 큰수', max_num2)
