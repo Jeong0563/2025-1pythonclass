@@ -10,7 +10,7 @@ max_num = 0
 max_num2 = 0
 max_num3 = 0
 ncount = 0
-for n in range(1, 100):
+for n in range(1, 10):
     ncopy = n
     count = 0
     while n > 1:
